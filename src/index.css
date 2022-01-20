@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    width: 600px !important;
+  }
+}
+
+.box {
+  display: flex !important;
+ 
+}
+
+.song-title {
+  margin-left: 20px;
+}
+
+.controls {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls .button {
+  margin: 5px;
+}
+
+.current-track {
+  width: 80%;
+}
+.footx{
+  background-color: rgb(238, 236, 236);
+  padding-top: 10px;
+  padding-bottom: 3px;
+}
+
+
+
+
+
+
+
+
+
+.row-header {
+  margin: 0px auto;
+  padding: 0px auto;
+}
+
+.high {
+  text-align: center;
+  text-transform: capitalize;
+  background-color: rgb(241, 216, 185);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
+}
+
+.footer {
+  background-color: #c8d3d3;
+  margin: 0px auto;
+  padding: 20px 0px 20px 0px;
+}
+.jumbotron {
+  padding: 40px 30px 30px 30px;
+  margin: 0px auto;
+  background: #e4e4e4;
+  color: rgb(87, 58, 0);
+}
+.custom {
+  padding-left: 340px;
+  padding-top: 20px;
+}
+.pad {
+  padding-top: 20px;
+}
+.paded {
+  padding-top: 20px;
+  padding-left: 10px;
+  margin-left: 100px;
+}
+
+address {
+  font-size: 80%;
+  margin: 0px;
+  color: #a15b00;
+}
+
+.navbar-dark {
+  background-color: #c01355;
+}
+
+.page-enter {
+  opacity: 0.01;
+  transform: translateX(-100%);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: all 300ms ease-in;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.page-exit-active {
+  opacity: 0.01;
+  transform: translateX(100%);
+  transition: all 300ms ease-out;
+}
+
+.bgimage {
+  background-color: black;
+  image-orientation: initial;
+}
+.all {
+  background-color: rgb(243, 243, 243);
+}
+
+.alldark {
+  background-color: rgb(255, 255, 255);
+}
+.allmenu {
+  background-color: rgb(14, 11, 11);
+}
+.feedback {
+  background-color: whitesmoke;
+}
+
+
+
+
+
+
+
+
+
+.navigationButtons {
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-top: 40px;
+}
+ 
+.navigationButtons a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid red;
+  color: red;
+  cursor: pointer;
+}
+ 
+.navigationButtons a:hover {
+  color: white;
+  background-color: red;
+}
+ 
+.navigationActive a {
+  color: white;
+  background-color: red;
+}
+ 
+.navigationDisabled a {
+  color: grey;
+  background-color: grey;
+}
+.card {
+  width: 40%;
+  height: auto;
+  background-color: rgb(187, 127, 71);
+  margin: auto;
+  border: 2px solid black;
+}
