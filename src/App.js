@@ -1,21 +1,17 @@
 import React from "react";
-import TrackList from "./components/TrackList";
-import PlayerControls from "./components/PlayerControls";
-import { BrowserRouter } from "react-router-dom";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import MusicPlayerTest from "./Pages/MusicPlayerTest";
+import Home from "./Pages/Home";
+import Dash from "./Pages/Dash";
 function App() {
   return (
-    <BrowserRouter>
-      <div>
-        <Header />
-        <div className="container">
-          <PlayerControls />
-          <TrackList />
-        </div>
-        <Footer />
-      </div>
-    </BrowserRouter>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Dash />} />
+        <Route path="/Player1.0" element={<Home />} />
+        <Route path="/Player2.0" element={<MusicPlayerTest />} />
+      </Routes>
+    </Router>
   );
 }
 

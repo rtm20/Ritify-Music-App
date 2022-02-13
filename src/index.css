@@ -197,3 +197,8 @@ address {
   margin: auto;
   border: 2px solid black;
 }
+
+.home{
+  padding-top: 100px;
+  height: auto;
+}

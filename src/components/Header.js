@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-
 export default class Header extends Component {
   constructor(props) {
     super(props);
@@ -46,7 +45,11 @@ export default class Header extends Component {
                       <a
                         href="/#"
                         target="_blank"
-                        style={{ color: "white", fontFamily: "cursive" , paddingTop:"16px" }}
+                        style={{
+                          color: "white",
+                          fontFamily: "cursive",
+                          paddingTop: "16px",
+                        }}
                       >
                         Ritify{" "}
                       </a>
@@ -66,7 +69,7 @@ export default class Header extends Component {
                   </p>
                 </b>
               </h3>
-              <div style={{ paddingLeft: "40px" , paddingTop:"16px" }}>
+              <div style={{ paddingLeft: "40px", paddingTop: "16px" }}>
                 {" "}
                 <a href="https://www.linkedin.com/in/ritesh-meena/">
                   <button type="button" class="btn btn-secondary">
@@ -74,7 +77,7 @@ export default class Header extends Component {
                   </button>
                 </a>
               </div>
-              <div style={{ paddingLeft: "20px" , paddingTop:"16px" }}>
+              <div style={{ paddingLeft: "20px", paddingTop: "16px" }}>
                 {" "}
                 <a href="https://github.com/rtm20">
                   <button
@@ -86,7 +89,7 @@ export default class Header extends Component {
                   </button>
                 </a>
               </div>
-              <div style={{ paddingLeft: "20px", paddingTop:"16px" }}>
+              <div style={{ paddingLeft: "20px", paddingTop: "16px" }}>
                 {" "}
                 <a href="https://www.instagram.com/_acoustring20/">
                   <button
@@ -117,7 +120,7 @@ export default class Header extends Component {
                 Youtube
               </button>
               &nbsp;&nbsp;&nbsp;
-              <input 
+              <input
                 class="form-control mr-sm-2"
                 type="search"
                 placeholder=" Search Google"
@@ -125,7 +128,7 @@ export default class Header extends Component {
                 value={this.state.searchQuery2}
                 onChange={this.handleInputChanged1.bind(this)}
               />
-            <button 
+              <button
                 type="button"
                 class="btn btn-outline-info btn-sm"
                 onClick={this.handleButtonClicked1.bind(this)}
