@@ -4,6 +4,7 @@ import logo from "./logo2.png";
 
 export default function Dash() {
   return (
+   
     <div className="home">
       <h1 style={{ color: "GrayText", textAlign: "center" }}>
         Welcome To Ritify.
@@ -31,25 +32,26 @@ export default function Dash() {
               data-placement="top"
               title="CLICK TO OPEN LAPTOP VERSION!!"
             >
-              WEB VERSION
+              WEB VERSION (STABLE)
             </button>
           </div>
         </Link>
         <br />
-        <Link to="/Player2.0">
+        <Link to="/commingsoon">
           <div style={{ padding: "2px", textAlign: "center" }}>
             <button
               type="button"
-              class="btn btn-outline-success btn-lg"
+              class="btn btn-outline-success btn-lg "
               data-toggle="tooltip"
               data-placement="top"
               title="CLICK TO OPEN MOBILE VERSION!!"
             >
-              MOBILE VERSION (BETA_1.0)
+              MOBILE VERSION (ALPHA_1.0)
             </button>
           </div>
         </Link>
       </div>
     </div>
+    
   );
 }

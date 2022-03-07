@@ -12,8 +12,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.container{
+  width: 100%;
+  height: 100%;
 
-@media screen and (min-width: 600px) {
+}
+@media screen and (min-width: 540px) {
   .container {
     width: 600px !important;
   }
@@ -21,7 +25,6 @@ code {
 
 .box {
   display: flex !important;
- 
 }
 
 .song-title {
@@ -42,19 +45,11 @@ code {
 .current-track {
   width: 80%;
 }
-.footx{
+.footx {
   background-color: rgb(238, 236, 236);
   padding-top: 10px;
   padding-bottom: 3px;
 }
-
-
-
-
-
-
-
-
 
 .row-header {
   margin: 0px auto;
@@ -149,14 +144,6 @@ address {
   background-color: whitesmoke;
 }
 
-
-
-
-
-
-
-
-
 .navigationButtons {
   width: 80%;
   height: 40px;
@@ -166,7 +153,7 @@ address {
   margin: auto;
   padding-top: 40px;
 }
- 
+
 .navigationButtons a {
   padding: 10px;
   margin: 8px;
@@ -175,17 +162,17 @@ address {
   color: red;
   cursor: pointer;
 }
- 
+
 .navigationButtons a:hover {
   color: white;
   background-color: red;
 }
- 
+
 .navigationActive a {
   color: white;
   background-color: red;
 }
- 
+
 .navigationDisabled a {
   color: grey;
   background-color: grey;
@@ -198,7 +185,88 @@ address {
   border: 2px solid black;
 }
 
-.home{
+.home {
   padding-top: 100px;
   height: auto;
+  border: #c9c5c1;
+  border-radius: 1px;
+  border-style: inherit;
+}
+
+
+
+footer {
+  padding: 2px 0;
+  background-color:rgb(0, 0, 0);
+  text-align: center;
+}
+footer h1 {
+  padding-top: 6px;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+footer p {
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+footer ul.social-list li {
+  display: inline-block;
+  margin: 0 8px;
+}
+footer ul.social-list li a {
+  color: #666666;
+  font-size: 16px;
+}
+footer ul.social-list li a:hover {
+  color: #e74c3c;
+}
+footer.dark-style {
+  background-color: #333333;
+}
+footer.dark-style h1 {
+  color: #fff;
+}
+
+
+.pagination {
+  display: flex;
+  width: 135%;
+  height: 60px;
+  padding-right: 30%;
+  padding-top: 10px;
+  justify-content:center;
+  list-style: none;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+.pagination a {
+  padding: 10px;
+  margin: 1px;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.pagination__link {
+  font-weight: bold;
+}
+
+.pagination__link--active a {
+  color: #fff;
+  background: #009225;
+}
+
+.pagination__link--disabled a {
+  color: rgb(198, 197, 202);
+  border: 1px solid rgb(198, 197, 202);
+}
+
+.pagination a:hover {
+  color: white;
+  background-color:rgb(97, 221, 255);
 }

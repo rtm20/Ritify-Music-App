@@ -45,11 +45,11 @@ function PlayerControls() {
           data-placement="top"
           title="CLICK TO OPEN OLD PLAYER!!"
         >
-          OLD PLAYER
+          MUSIC PLAYER
         </button>
         <br />
         <br />
-        <Link to="/Player2.0">
+        {/* <Link to="/Player2.0">
           <div style={{ padding: "2px", textAlign: "center" }}>
             <button
               type="button"
@@ -61,11 +61,11 @@ function PlayerControls() {
               NEW PLAYER (BETA_1.0)
             </button>
           </div>
-        </Link>
+        </Link> */}
       </div>
       <Modal show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>
-          <Modal.Title>Ritify-Player</Modal.Title>
+          <Modal.Title>Ritify-Player_1.0</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className="box controls has-background-grey-dark">

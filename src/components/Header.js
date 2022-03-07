@@ -23,14 +23,30 @@ export default class Header extends Component {
 
   handleButtonClicked() {
     var searchQuery = this.state.searchQuery;
+    this.setState({
+      searchQuery: "",
+    });
 
-    window.location.href =
-      "https://www.youtube.com/results?search_query=" + searchQuery;
+    if (searchQuery === "") {
+      alert("Search Box is Empty!!!");
+    } else {
+      window.open(
+        "https://www.youtube.com/results?search_query=" + searchQuery,
+        "_blank"
+      );
+    }
   }
   handleButtonClicked1() {
     var searchQuery2 = this.state.searchQuery2;
-
-    window.location.href = "https://www.google.com/search?q=" + searchQuery2;
+    this.setState({
+      searchQuery2: "",
+    });
+    if (searchQuery2 === "") {
+      alert("Search Box is Empty!!!");
+    } else {
+      window.open("https://www.google.com/search?q=" + searchQuery2, "_blank");
+      //window.location.href = "https://www.google.com/search?q=" + searchQuery2;
+    }
   }
   render() {
     return (
@@ -43,13 +59,16 @@ export default class Header extends Component {
                   <div className="text-center">
                     <div class="text-success">
                       <a
-                        href="/#"
+                        href="/"
                         target="_blank"
                         style={{
                           color: "white",
                           fontFamily: "cursive",
                           paddingTop: "16px",
                         }}
+                        data-toggle="tooltip"
+                    data-placement="right"
+                    title="Go to Home"
                       >
                         Ritify{" "}
                       </a>
@@ -72,7 +91,13 @@ export default class Header extends Component {
               <div style={{ paddingLeft: "40px", paddingTop: "16px" }}>
                 {" "}
                 <a href="https://www.linkedin.com/in/ritesh-meena/">
-                  <button type="button" class="btn btn-secondary">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Connect on Linkedin"
+                  >
                     <span class="bi bi-linkedin"></span>{" "}
                   </button>
                 </a>
@@ -84,6 +109,9 @@ export default class Header extends Component {
                     type="button"
                     class="btn btn-secondary"
                     style={{ color: "black" }}
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Connect on Github"
                   >
                     <span class="bi bi-github"></span>{" "}
                   </button>
@@ -91,11 +119,14 @@ export default class Header extends Component {
               </div>
               <div style={{ paddingLeft: "20px", paddingTop: "16px" }}>
                 {" "}
-                <a href="https://www.instagram.com/_acoustring20/">
+                <a href="https://www.instagram.com/ritify.music/">
                   <button
                     type="button"
                     class="btn btn-secondary"
                     style={{ color: "black" }}
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Connect on Instagram"
                   >
                     <span class="bi bi-instagram"></span>{" "}
                   </button>
@@ -116,6 +147,9 @@ export default class Header extends Component {
                 type="button"
                 class="btn btn-outline-danger btn-sm"
                 onClick={this.handleButtonClicked.bind(this)}
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Click to search"
               >
                 Youtube
               </button>
@@ -132,6 +166,9 @@ export default class Header extends Component {
                 type="button"
                 class="btn btn-outline-info btn-sm"
                 onClick={this.handleButtonClicked1.bind(this)}
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Click to search"
               >
                 Google
               </button>
