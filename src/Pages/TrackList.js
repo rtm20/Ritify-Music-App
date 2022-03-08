@@ -13,7 +13,7 @@ function TrackList() {
     useMusicPlayer();
 
     const [page, setPage] = useState(0);
-    const itemPerPage = 4;
+    const itemPerPage = 3;
     const itemsVistited = page * itemPerPage;
     var totalPages;
     totalPages = Math.ceil(trackList.length / itemPerPage);
