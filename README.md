@@ -1,4 +1,4 @@
-# Ritify Application --> https://ritify-music.web.app/ (Deployed on Firebase)
+# Ritify Application --> https://ritify1-music.web.app/ (Deployed on Firebase)
 
 Steps to start on localhost.
 
